@@ -6,8 +6,7 @@
 
 # Points:
 
-13 knots total
- - 7 stitches
+13 knots total (plus 7 stitches)
 
 Major choice: line 179 (Dramatically increases hances of getting bad ending if you try to climb the wall instead of throwing the rope)
 
