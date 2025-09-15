@@ -16,7 +16,23 @@
     Make sure to list the items you changed for points in the Readme.md. I cannot guess your intentions!
 
 13 knots total
- - 7 
+ - 7 stitches
+
+Major choice: line 179 (Dramatically increases hances of getting bad ending if you try to climb the wall instead of throwing the rope)
+
+Reflection of major choice: line 57
+
+Loop: line 184 (this is essentially a while loop with a sentinel at line 185, but in Ink-y syntax and with the option for the player to exit)
+
+Pick up items: lines 127, 151, 164 (Acknowledgement of said items is kind of everywhere)
+
+Gate options behind stats: line 184 (You can't throw the rope around a rock until you've increased your ability to 4 by throwing repeatedly)
+
+Keep track of visited passages: lines 148, 159, 169
+
+Only display description first time: lines 96, 156
+
+
 
 */
 
@@ -161,8 +177,8 @@ LIST status_updates = five = 5, ten = 10, fifteen = 15, twenty = 20, twenty_five
         -> advance_time -> escape
 
     = climb
-        It proves far too steep, and you fall back down to the bottom, nearly losing your torch in the process.
-        -> advance_time -> south_passage
+        It proves far too steep, and you fall back down to the bottom, nearly losing your torch in the process. Your fatigue grows.
+        -> advance_time -> advance_time -> advance_time -> south_passage
 
 /* I can't figure out any better way to deal with this situation, as the default for alternatives (sequences) increment every time you see them, rather than every time they're selected. Since I wanted to play with the prompt message, I resorted to... this :/  */
 == rope_throw ==
